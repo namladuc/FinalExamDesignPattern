@@ -48,8 +48,8 @@ public class DataBase {
     }
 
     public void getDataBaseInfo() {
-        System.out.println("ID : " + ID);
-        System.out.println("Instance: " + instance);
-        System.out.println();
+        System.out.println("DataBase ID : " + ID + " From thread " + Thread.currentThread().getName());
+        // System.out.println("Instance: " + instance);
+        //System.out.println();
     }
 }
