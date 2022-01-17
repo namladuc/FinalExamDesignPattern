@@ -7,16 +7,14 @@ public class ReflectionBreak {
         Singleton instance1 = Singleton.getInstance();
         Singleton instance2 = null;
         try {
-            Constructor[] constructors = Singleton.class.getDeclaredConstructors();
-            for (Constructor constructor : constructors) {
+            Constructor<?>[] constructors = Singleton.class.getDeclaredConstructors();
+            for (Constructor<?> constructor : constructors) {
                 // Below code will destroy the singleton pattern
                 constructor.setAccessible(true);
                 instance2 = (Singleton) constructor.newInstance();
                 break;
             }
-        }
-
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
