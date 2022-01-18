@@ -154,4 +154,10 @@ public class Computer {
             return computer;
         }
     }
+
+    public String toString() {
+        return String.format(
+            " CPU : %s \n Computer Case: %s \n Motherboard: %s \n GPU: %s \n HDD: %s \n OperatingSystem: %s \n powerSupply: %sW \n RAM: %sGB",
+            CPU, computerCase, motherboard, GPU, HDD, operatingSystem, powerSupply, amountOfRAM);
+    }
 }

@@ -1,54 +1,55 @@
 package builder.morecomputer;
 
-public class GamingComputer implements ComputerBuilder {
+public class OfficeComputer implements ComputerBuilder {
     private Computer computer;
 
-    public GamingComputer() {
+    public OfficeComputer() {
         computer = new Computer();
     }
 
     @Override
     public void buildCPU() {
-        computer.setCPU("Intel i9 9900K");
+        computer.setCPU("Intel Core i3-4160");
     }
 
     @Override
     public void buildComputerCase() {
-        computer.setComputerCase("Super Led Case");
+        computer.setComputerCase("Sama A34");
     }
 
     @Override
     public void buildMotherboard() {
-        computer.setMotherboard("ASUS ROG Strix Z390-E");
+        computer.setMotherboard("Gigabyte B85M - D3V");
     }
 
     @Override
     public void buildHDD() {
-        computer.setHDD("SSD 512GB x2");
+        computer.setHDD("250GB SATA 7200rpm");
     }
 
     @Override
     public void buildGPU() {
-        computer.setGPU("ASUS RTX 2080 Ti OC");
+        computer.setGPU("None");
     }
 
     @Override
     public void buildPowerSupply() {
-        computer.setPowerSupply(850);
+        computer.setPowerSupply(350);
     }
 
     @Override
     public void installOperatingSystem() {
-        computer.setOperatingSystem("Windows 11");
+        computer.setOperatingSystem("Windows 10");
     }
 
     @Override
     public void buildAmountOfRAM() {
-        computer.setAmountOfRAM(32);
+        computer.setAmountOfRAM(8);
     }
 
     @Override
     public Computer getComputer() {
         return this.computer;
     }
+    
 }
