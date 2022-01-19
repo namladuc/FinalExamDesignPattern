@@ -2,7 +2,7 @@ package builder.computers;
 
 public class Client {
     public static void main(String[] args) {
-        Computer computer = new Computer.Builder()
+        Computer computer = new ComputerBuilder()
                 .withCase("Tower")
                 .withCPU("Intel i5")
                 .withMotherboard("MSI B360M-MORTAR")
