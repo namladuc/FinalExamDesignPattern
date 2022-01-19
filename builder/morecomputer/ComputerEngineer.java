@@ -8,6 +8,10 @@ public class ComputerEngineer {
         this.computerBuilder = computerBuilder;
     }
 
+    public void changeBuilder(ComputerBuilder computerBuilder) {
+        this.computerBuilder = computerBuilder;
+    }
+
     public Computer getComputer() {
         return computerBuilder.getComputer();
     }
